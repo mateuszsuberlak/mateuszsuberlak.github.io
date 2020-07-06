@@ -17,16 +17,17 @@
 </head>
 
 <body>
-  <section class="hallo-part">
-    <section>
-      <img alt="Foto of Mateusz Suberlak" src="../assets/img/my-photo.png">
+  <section class="hallo-area">
+    <section class="hallo-area--hallo-photo">
+      <img alt="Foto of Mateusz Suberlak" src="../assets/img/my-photo.png" class="hallo-area--photo">
     </section>
-    <article>
+    <article class="hallo-area--about">
       <h2>My name is Mateusz and I'm Fullstack developer and aspiring Gamedev.</h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lorem, ultrices ac urna et, interdum feugiat
       libero. Sed faucibus.
+      <a href="mailto:suberlakm@gmail.com" class="hallo-area--contact-me">suberlakm@gmail.com</a>
     </article>
-    <a href="mailto:suberlakm@gmail.com">suberlakm@gmail.com</a>
+    
   </section>
   <section class="skill-part">
     <h1>My skills</h1>
@@ -74,28 +75,30 @@
   <section class="projects-part">
     <h2>Recent projects</h2>
     <p>I started my frontend developer path in 2003. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
-    <div>
-      <div>
-        <img alt="Github icon" src="../assets/img/Github Icon.svg"> 
-        <dl>
-          <dt>
-            project:
-            <dd>name</dd>
-          </dt>
-          <dt>
-            description:
-            <dd>descrion</dd>
-          </dt>
-          <dt>
-            demo:
-            <dd>url </dd>
-          </dt>
-          <dt>
-            github:
-            <dd>url</dd>
-          </dt>
-        </dl>
+    <div class="github-repo-list--js" >
+  
+      <div class="github-repo-console">
+        <div class="github-repo-console-content">
+          <img class="github-repo-console-content--icon" alt="Github icon" src="../assets/img/Github Icon.svg"> 
+          <dl class="github-repo-console-content--list">
+            <dt class="github-repo-console-content--list-line">
+              project:<dd class="github-repo-console-content--list-project-name">name</dd>
+            </dt>
+            <dt class="github-repo-console-content--list-line github-repo-console-content--list-line__description">
+              description:<dd>descrion</dd>
+            </dt>
+            <dt class="github-repo-console-content--list-line">
+              demo:<dd>url </dd>
+            </dt>
+            <dt class="github-repo-console-content--list-line">
+              github:<dd>url</dd>
+            </dt>
+          </dl>
+        </div>
       </div>
+      <template>
+        
+      </template>
     </div>
   </section>
   <section class="contact-part">

@@ -1,13 +1,167 @@
 @import "~normalize.css";
-
 @import "_variables";
-@import "modules/hello.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/*---- Reset ----*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*---- Rest ----*/
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: $white;
+  color: $textDeafult;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: $textDark;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: $textDark;
+}
+
+b strong {
+  font-weight: bold;
+}
+
+dd,
+dt {
+  display: inline;
+}
+
+.hallo-area {
+  justify-content: center;
+  align-content: center;
+  background-color: $white;
+  width: 100vw;
+  min-height: 722px;
+
+  &--hallo-photo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &--photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 98px;
+    margin-bottom: 40px;
+    border: 16px solid #f6f9fd;
+  }
+
+  &--about {
+    text-align: center;
+    max-width: 288px;
+
+    margin: 0 auto;
+  }
+}
+
+.github-repo-console {
+  width: 288px;
+  background-color: $consoleGray2;
+  border-radius: 16px;
+  height: 320px;
+  margin: 0 auto;
+
+  &-content {
+    height: 256px;
+
+    &::before {
+      content: "";
+      height: 40px;
+      background-color: $consoleGray1;
+      border-radius: 16px 16px 0px 0px;
+      display: block;
+    }
+  }
+}
+
+.github-repo-console-header {
+  height: 16px;
+}
+
+.github-repo-console-content {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  &--icon {
+    //position: relative;
+    //top:24px;
+    //left:16px;
+    margin: 24px 0 24px 16px
+  }
+
+  &--list {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 255px;
+    margin: 0 auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &-line {
+      flex-basis: 45%;
+      text-align: right;
+      margin-bottom: 8px;
+
+      &__description{
+        margin-bottom: 24px;
+      }
+    }
+  
+    dd {
+      flex-basis: 55%;
+      flex-grow: 1;
+      margin: 0;
+    }
+
+    &-project-name {
+      color:$white;
+    }
+    
+    &-description-line dt{
+      margin-bottom: 24px;
+    }
+  }
 }
