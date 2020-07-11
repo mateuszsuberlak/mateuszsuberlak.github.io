@@ -1,8 +1,7 @@
 @import "~normalize.css";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 /*---- Reset ----*/
 
@@ -10,7 +9,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -24,7 +25,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Nunito";
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -36,7 +37,6 @@ h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  color: $textDark;
 }
 
 h2 {
@@ -44,7 +44,6 @@ h2 {
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
-  color: $textDark;
 }
 
 b strong {
@@ -63,28 +62,63 @@ dt {
   width: 100vw;
   min-height: 722px;
 
-  &--hallo-photo {
+  &--content {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 288px;
+    margin: 0 16px auto;
+    margin-top: 64px;
   }
 
   &--photo {
+    display: block;
+    box-sizing: content-box;
     width: 96px;
     height: 96px;
     border-radius: 50%;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 98px;
-    margin-bottom: 40px;
+    margin-top: 34px;
     border: 16px solid #f6f9fd;
+    object-fit: cover;
   }
 
-  &--about {
-    text-align: center;
-    max-width: 288px;
+  &--contact-me-button {
+    display: flex;
+    flex: none;
+    background: $textLink;
+    border-radius: 64px;
+    color: $white;
+    margin-top: 48px;
+    max-width: 278px;
 
-    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    text-emphasis: center;
+    align-self: center;
+    padding: 4px 24px;
+  }
+}
+
+.skill-part {
+  background: $blue;
+  width: 100%;
+  text-align: center;
+  color: $white;
+
+  &--header-emoji {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  &--column {
+    text-align: left;
+    list-style-image: url("../assets/img/small-tick.svg");
   }
 }
 
@@ -94,6 +128,7 @@ dt {
   border-radius: 16px;
   height: 320px;
   margin: 0 auto;
+  margin-bottom: 24px;
 
   &-content {
     height: 256px;
@@ -113,20 +148,17 @@ dt {
 }
 
 .github-repo-console-content {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 
   &--icon {
-    //position: relative;
-    //top:24px;
-    //left:16px;
-    margin: 24px 0 24px 16px
+    margin: 24px 0 24px 16px;
   }
 
-  &--list {
+  &--list-line {
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
@@ -137,19 +169,28 @@ dt {
     flex-flow: row wrap;
     width: 255px;
     margin: 0 auto;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
 
-    &-line {
-      flex-basis: 45%;
-      text-align: right;
-      margin-bottom: 8px;
-
-      &__description{
-        margin-bottom: 24px;
-      }
+    &__description {
+      margin-bottom: 24px;
     }
-  
+  }
+
+  &--line-left {
+    flex-basis: 40%;
+    text-align: right;
+  }
+
+  &--line-right{
+    flex-basis: 55%;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+ 
+    
+
     dd {
       flex-basis: 55%;
       flex-grow: 1;
@@ -157,11 +198,11 @@ dt {
     }
 
     &-project-name {
-      color:$white;
+      color: $white;
     }
-    
-    &-description-line dt{
+
+    &-description-line dt {
       margin-bottom: 24px;
     }
-  }
+  
 }

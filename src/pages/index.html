@@ -18,23 +18,21 @@
 
 <body>
   <section class="hallo-area">
-    <section class="hallo-area--hallo-photo">
+    <article class="hallo-area--content">
       <img alt="Foto of Mateusz Suberlak" src="../assets/img/my-photo.png" class="hallo-area--photo">
-    </section>
-    <article class="hallo-area--about">
       <h2>My name is Mateusz and I'm Fullstack developer and aspiring Gamedev.</h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lorem, ultrices ac urna et, interdum feugiat
       libero. Sed faucibus.
-      <a href="mailto:suberlakm@gmail.com" class="hallo-area--contact-me">suberlakm@gmail.com</a>
+      <a href="mailto:suberlakm@gmail.com" class="hallo-area--contact-me-button">suberlakm@gmail.com</a>
     </article>
     
   </section>
   <section class="skill-part">
     <h1>My skills</h1>
     <article>
-      <div>💪</div>
+      <div class="skill-part--header-emoji">💪</div>
       <h3>Working knowledge</h3>
-      <ul>
+      <ul class="skill-part--column">
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
@@ -46,9 +44,9 @@
       </ul>
     </article>
     <article>
-      <div>🤔</div>
+      <div class="skill-part--header-emoji">🤔</div>
       <h3>Know something about</h3>
-      <ul>
+      <ul class="skill-part--column">
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
@@ -59,9 +57,9 @@
       </ul>
     </article>
     <article>
-      <div>🎓</div>
+      <div class="skill-part--header-emoji">🎓</div>
       <h3>Want to learn</h3>
-      <ul>
+      <ul class="skill-part--column">
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
         <li>Lorem ipsum dolor.</li>
@@ -81,20 +79,24 @@
       <div class="github-repo-console">
         <div class="github-repo-console-content">
           <img class="github-repo-console-content--icon" alt="Github icon" src="../assets/img/Github Icon.svg"> 
-          <dl class="github-repo-console-content--list">
-            <dt class="github-repo-console-content--list-line">
-              project:<dd class="github-repo-console-content--list-project-name github-project-name--js">name</dd>
-            </dt>
-            <dt class="github-repo-console-content--list-line github-repo-console-content--list-line__description">
-              description:<dd class="github-project-description--js">descrion</dd>
-            </dt>
-            <dt class="github-repo-console-content--list-line">
-              demo:<dd class="github-project-demo-url--js">url </dd>
-            </dt>
-            <dt class="github-repo-console-content--list-line">
-              github:<dd class="github-project-repo-url--js">url</dd>
-            </dt>
-          </dl>
+          <div class="github-repo-console-content--list">
+              <p class="github-repo-console-content--list-line">
+                <span class="github-repo-console-content--line-left">project:</span>
+                <span class="github-repo-console-content--line-right github-repo-console-content--line-right__name github-project-name--js">name</span>
+              </p>
+              <p class="github-repo-console-content--list-line github-repo-console-content--list-line__description">
+                <span class="github-repo-console-content--line-left">description:</span>
+                <span class="github-repo-console-content--line-right github-project-description--js">descrion</span>
+              </p>
+              <p class="github-repo-console-content--list-line">
+                <span class="github-repo-console-content--line-left">demo:</span>
+                <span class="github-repo-console-content--line-right github-project-demo-url--js">url</span>
+              </p>
+              <p class="github-repo-console-content--list-line">
+                <span class="github-repo-console-content--line-left">github:</span>
+                <span class="github-repo-console-content--line-right github-project-repo-url--js">url</span>
+              </p>
+          </div>
         </div>
       </div>
     </template>
