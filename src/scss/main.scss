@@ -55,33 +55,18 @@ dt {
   display: inline;
 }
 
-.hallo-area {
+.section-area {
   justify-content: center;
   align-content: center;
-  background-color: $white;
   width: 100vw;
-  min-height: 722px;
 
-  &--content {
+  &--content{
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 288px;
     margin: 0 16px auto;
     margin-top: 64px;
-  }
-
-  &--photo {
-    display: block;
-    box-sizing: content-box;
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 34px;
-    border: 16px solid #f6f9fd;
-    object-fit: cover;
+    margin-bottom:88px;
   }
 
   &--contact-me-button {
@@ -103,6 +88,47 @@ dt {
     align-self: center;
     padding: 4px 24px;
   }
+
+  &__skills {
+    background: $blue;
+    color: $white;
+  }
+
+  &__contact {
+    background: $blueLight;
+  }
+}
+
+.hallo-area {
+  justify-content: center;
+  align-content: center;
+  background-color: $white;
+  width: 100vw;
+  min-height: 722px;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 16px auto;
+    margin-top: 64px;
+    margin-bottom:88px;
+  }
+
+  &--photo {
+    display: block;
+    box-sizing: content-box;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 34px;
+    border: 16px solid #f6f9fd;
+    object-fit: cover;
+  }
+
+
 }
 
 .skill-part {
@@ -122,8 +148,15 @@ dt {
   }
 }
 
+.section-area-skills--header-title {
+  margin-bottom: 64px;
+}
+
+.section-area-repos--title {
+  margin-bottom: 46px;
+}
+
 .github-repo-console {
-  width: 288px;
   background-color: $consoleGray2;
   border-radius: 16px;
   height: 320px;
@@ -163,6 +196,7 @@ dt {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
+    overflow-wrap: break-word;
     line-height: 24px;
 
     display: flex;
@@ -187,9 +221,7 @@ dt {
     flex-grow: 1;
     margin: 0;
   }
-
  
-    
 
     dd {
       flex-basis: 55%;
@@ -205,4 +237,18 @@ dt {
       margin-bottom: 24px;
     }
   
+}
+
+.contact-area--external-page-icon {
+  border: 10px solid $white;
+  border-radius: 50px;
+  background: $white;
+  display: flex;
+}
+
+.contact-area--icon-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 192px;
+  margin: 0 auto;
 }

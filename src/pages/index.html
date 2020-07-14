@@ -17,72 +17,79 @@
 </head>
 
 <body>
-  <section class="hallo-area">
+  <section class="section-area">
     <article class="hallo-area--content">
       <img alt="Foto of Mateusz Suberlak" src="../assets/img/my-photo.png" class="hallo-area--photo">
       <h2>My name is Mateusz and I'm Fullstack developer and aspiring Gamedev.</h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lorem, ultrices ac urna et, interdum feugiat
       libero. Sed faucibus.
-      <a href="mailto:suberlakm@gmail.com" class="hallo-area--contact-me-button">suberlakm@gmail.com</a>
+      <a href="mailto:suberlakm@gmail.com" class="section-area--contact-me-button">suberlakm@gmail.com</a>
     </article>
-    
+
   </section>
-  <section class="skill-part">
-    <h1>My skills</h1>
-    <article>
-      <div class="skill-part--header-emoji">💪</div>
-      <h3>Working knowledge</h3>
-      <ul class="skill-part--column">
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-      </ul>
-    </article>
-    <article>
-      <div class="skill-part--header-emoji">🤔</div>
-      <h3>Know something about</h3>
-      <ul class="skill-part--column">
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-      </ul>
-    </article>
-    <article>
-      <div class="skill-part--header-emoji">🎓</div>
-      <h3>Want to learn</h3>
-      <ul class="skill-part--column">
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-      </ul>
-    </article>
+  <section class="section-area section-area__skills">
+    <section class="section-area--content">
+      <h1 class="section-area-skills--header-title">My skills</h1>
+      <article>
+        <div class="skill-part--header-emoji">💪</div>
+        <h3>Working knowledge</h3>
+        <ul class="skill-part--column">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </article>
+      <article>
+        <div class="skill-part--header-emoji">🤔</div>
+        <h3>Know something about</h3>
+        <ul class="skill-part--column">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </article>
+      <article>
+        <div class="skill-part--header-emoji">🎓</div>
+        <h3>Want to learn</h3>
+        <ul class="skill-part--column">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </article>
+    </section>
   </section>
-  <section class="projects-part">
-    <h2>Recent projects</h2>
-    <p>I started my frontend developer path in 2003. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
-    <div class="github-repo-list--js" >
-    </div>
-    <template class="github-repo-console-template--js">
-      <div class="github-repo-console">
-        <div class="github-repo-console-content">
-          <img class="github-repo-console-content--icon" alt="Github icon" src="../assets/img/Github Icon.svg"> 
-          <div class="github-repo-console-content--list">
+  <section class="section-area">
+    <section class="section-area--content">
+      <article class="section-area-repos--title">
+        <h2>Recent projects</h2>
+        <p>I started my frontend developer path in 2003. Since then, I’ve built some projects. Here’s the list of the
+          things I’ve done so far.</p>
+      </article>
+      <section class="github-repo-list--js">
+      </section>
+      <template class="github-repo-console-template--js">
+        <div class="github-repo-console">
+          <div class="github-repo-console-content">
+            <img class="github-repo-console-content--icon" alt="Github icon" src="../assets/img/Github Icon.svg">
+            <div class="github-repo-console-content--list">
               <p class="github-repo-console-content--list-line">
                 <span class="github-repo-console-content--line-left">project:</span>
-                <span class="github-repo-console-content--line-right github-repo-console-content--line-right__name github-project-name--js">name</span>
+                <span
+                  class="github-repo-console-content--line-right github-repo-console-content--line-right__name github-project-name--js">name</span>
               </p>
               <p class="github-repo-console-content--list-line github-repo-console-content--list-line__description">
                 <span class="github-repo-console-content--line-left">description:</span>
@@ -96,25 +103,30 @@
                 <span class="github-repo-console-content--line-left">github:</span>
                 <span class="github-repo-console-content--line-right github-project-repo-url--js">url</span>
               </p>
+            </div>
           </div>
         </div>
-      </div>
-    </template>
-
+      </template>
+    </section>
   </section>
-  <section class="contact-part">
-    <h2>Contact me</h2>
-    <p>I’m open for new opportunities. If you have one for me we should talk!</p>
-    <div>
-      <div>
-        <img alt="Link to Github as icon">
-        <img alt="Link to Instagram as icon">
-        <img alt="Link to Facebook as icon">
+  <section class="section-area section-area__contact">
+    <section class="section-area--content">
+      <h2>Contact me</h2>
+      <p>I’m open for new opportunities. If you have one for me we should talk!</p>
+        <section class="contact-area--icon-row">
+          <div class="contact-area--external-page-icon">
+            <img alt="Link to Github as icon" src="../assets/img/Github-Icon-Blue.svg">
+          </div>
+          <div class="contact-area--external-page-icon">
+            <img alt="Link to Instagram as icon" src="../assets/img/Instagram-Icon-Blue.svg">
+          </div>
+          <div class="contact-area--external-page-icon">
+            <img alt="Link to Facebook as icon" src="../assets/img/Facebook-Icon-Blue.svg">
+          </div>
+        </section>
+        <a class="section-area--contact-me-button" href="mailto:suberlakm@gmail.com">suberlakm@gmail.com</a>
       </div>
-      <div>
-        <a href="mailto:suberlakm@gmail.com">suberlakm@gmail.com</a>
-      </div>
-    </div>
+    </section>
   </section>
 </body>
 
