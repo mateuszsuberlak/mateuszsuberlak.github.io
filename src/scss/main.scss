@@ -1,6 +1,6 @@
 @import "~normalize.css";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 /*---- Reset ----*/
@@ -25,7 +25,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -60,13 +60,13 @@ dt {
   align-content: center;
   width: 100vw;
 
-  &--content{
+  &--content {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0 16px auto;
     margin-top: 64px;
-    margin-bottom:88px;
+    margin-bottom: 88px;
   }
 
   &--contact-me-button {
@@ -78,7 +78,7 @@ dt {
     margin-top: 48px;
     max-width: 278px;
 
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -112,7 +112,7 @@ dt {
     text-align: center;
     margin: 0 16px auto;
     margin-top: 64px;
-    margin-bottom:88px;
+    margin-bottom: 88px;
   }
 
   &--photo {
@@ -127,8 +127,6 @@ dt {
     border: 16px solid #f6f9fd;
     object-fit: cover;
   }
-
-
 }
 
 .skill-part {
@@ -164,7 +162,13 @@ dt {
   margin-bottom: 24px;
 
   &-content {
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
     height: 256px;
+    position: relative;
 
     &::before {
       content: "";
@@ -173,70 +177,53 @@ dt {
       border-radius: 16px 16px 0px 0px;
       display: block;
     }
-  }
-}
 
-.github-repo-console-header {
-  height: 16px;
-}
-
-.github-repo-console-content {
-  font-family: "Roboto Mono", monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-
-  &--icon {
-    margin: 24px 0 24px 16px;
-  }
-
-  &--list-line {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    overflow-wrap: break-word;
-    line-height: 24px;
-
-    display: flex;
-    flex-flow: row wrap;
-    width: 255px;
-    margin: 0 auto;
-    margin-bottom: 8px;
-    overflow: hidden;
-
-    &__description {
-      margin-bottom: 24px;
-    }
-  }
-
-  &--line-left {
-    flex-basis: 40%;
-    text-align: right;
-  }
-
-  &--line-right{
-    flex-basis: 55%;
-    flex-grow: 1;
-    margin: 0;
-  }
- 
-
-    dd {
-      flex-basis: 55%;
-      flex-grow: 1;
-      margin: 0;
+    &--icon {
+      position: absolute;
+      top: 64px;
+      left: 16px;
     }
 
-    &-project-name {
-      color: $white;
+    &--list {
+      margin: 72px 16px 24px 16px;
+
+      &-line {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 8px;
+        height: 24px;
+
+        &__description {
+          margin-bottom: 24px;
+          height: 48px;
+        }
+      }
     }
 
-    &-description-line dt {
-      margin-bottom: 24px;
+    &--line-left {
+      flex-basis: 40%;
+      text-align: right;
     }
-  
+
+    &--line-right {
+      flex-basis: 58%;
+      margin-left: 4px;
+      text-align: left;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: inherit;
+
+      &__link {
+        &::after {
+          content: ">";
+        }
+        &::before {
+          content: "<";
+        }
+      }
+    }
+  }
 }
 
 .contact-area--external-page-icon {
