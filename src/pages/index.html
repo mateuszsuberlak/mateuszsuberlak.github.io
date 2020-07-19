@@ -20,20 +20,20 @@
   <section class="section-area">
     <article class="hallo-area--content">
       <img alt="Foto of Mateusz Suberlak" src="../assets/img/my-photo.png" class="hallo-area--photo">
-      <h2>My name is Mateusz and I'm Fullstack developer and aspiring Gamedev.</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lorem, ultrices ac urna et, interdum feugiat
-      libero. Sed faucibus.
+      <h2 class="hallo-area--title">My name is Mateusz and I'm Fullstack developer and aspiring Gamedev.</h2>
+      You might be interested in checking the list of <a href="#skills-section">my skills</a>. Don’t forget to have a glimpse at
+      <a href="#project-repos-section">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a href="#contact-section">contact me</a> 😊
       <a href="mailto:suberlakm@gmail.com" class="section-area--contact-me-button">suberlakm@gmail.com</a>
     </article>
 
   </section>
-  <section class="section-area section-area__skills">
+  <section class="section-area section-area__skills" id="skills-section">
     <section class="section-area--content">
       <h1 class="section-area-skills--header-title">My skills</h1>
       <article>
         <div class="skill-part--header-emoji">💪</div>
         <h3>Working knowledge</h3>
-        <ul class="skill-part--column">
+        <ul class="skill-part--list">
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
@@ -47,7 +47,7 @@
       <article>
         <div class="skill-part--header-emoji">🤔</div>
         <h3>Know something about</h3>
-        <ul class="skill-part--column">
+        <ul class="skill-part--list">
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
@@ -60,7 +60,7 @@
       <article>
         <div class="skill-part--header-emoji">🎓</div>
         <h3>Want to learn</h3>
-        <ul class="skill-part--column">
+        <ul class="skill-part--list">
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
@@ -72,12 +72,14 @@
       </article>
     </section>
   </section>
-  <section class="section-area">
+  <section class="section-area" id="project-repos-section">
     <section class="section-area--content">
-      <article class="section-area-repos--title">
+      <article class="section-area-repos--about">
         <h2>Recent projects</h2>
-        <p>I started my frontend developer path in 2003. Since then, I’ve built some projects. Here’s the list of the
-          things I’ve done so far.</p>
+        <p class="section-area-repos--about-text">
+          I started my frontend developer path in 2003. Since then, I’ve built some projects. Here’s the list of the
+          things I’ve done so far.
+        </p>
       </article>
       <section class="github-repo-list--js">
       </section>
@@ -89,7 +91,7 @@
             <div class="github-repo-console-header-dot"></div>
           </div>
           <div class="github-repo-console-content">
-            
+
             <img class="github-repo-console-content--icon" alt="Github icon" src="../assets/img/Github Icon.svg">
             <div class="github-repo-console-content--list">
               <p class="github-repo-console-content--list-line">
@@ -103,11 +105,13 @@
               </p>
               <p class="github-repo-console-content--list-line">
                 <span class="github-repo-console-content--line-left">demo:</span>
-                <span class="github-repo-console-content--line-right github-repo-console-content--line-right__link github-project-demo-url--js">url</span>
+                <span
+                  class="github-repo-console-content--line-right github-repo-console-content--line-right__link github-project-demo-url--js">url</span>
               </p>
               <p class="github-repo-console-content--list-line">
                 <span class="github-repo-console-content--line-left">github:</span>
-                <span class="github-repo-console-content--line-right github-repo-console-content--line-right__link github-project-repo-url--js">url</span>
+                <span
+                  class="github-repo-console-content--line-right github-repo-console-content--line-right__link github-project-repo-url--js">url</span>
               </p>
             </div>
           </div>
@@ -115,22 +119,22 @@
       </template>
     </section>
   </section>
-  <section class="section-area section-area__contact">
+  <section class="section-area section-area__contact" id="contact-section">
     <section class="section-area--content">
       <h2>Contact me</h2>
       <p>I’m open for new opportunities. If you have one for me we should talk!</p>
-        <section class="contact-area--icon-row">
-          <div class="contact-area--external-page-icon">
-            <img alt="Link to Github as icon" src="../assets/img/Github-Icon-Blue.svg">
-          </div>
-          <div class="contact-area--external-page-icon">
-            <img alt="Link to Instagram as icon" src="../assets/img/Instagram-Icon-Blue.svg">
-          </div>
-          <div class="contact-area--external-page-icon">
-            <img alt="Link to Facebook as icon" src="../assets/img/Facebook-Icon-Blue.svg">
-          </div>
-        </section>
-        <a class="section-area--contact-me-button" href="mailto:suberlakm@gmail.com">suberlakm@gmail.com</a>
+      <section class="contact-area--icon-row">
+        <div class="contact-area--external-page-icon">
+          <img alt="Link to Github as icon" src="../assets/img/Github-Icon-Blue.svg">
+        </div>
+        <div class="contact-area--external-page-icon">
+          <img alt="Link to Instagram as icon" src="../assets/img/Instagram-Icon-Blue.svg">
+        </div>
+        <div class="contact-area--external-page-icon">
+          <img alt="Link to Facebook as icon" src="../assets/img/Facebook-Icon-Blue.svg">
+        </div>
+      </section>
+      <a class="section-area--contact-me-button" href="mailto:suberlakm@gmail.com">suberlakm@gmail.com</a>
       </div>
     </section>
   </section>

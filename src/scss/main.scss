@@ -37,6 +37,11 @@ h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 h2 {
@@ -44,15 +49,26 @@ h2 {
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: $textLink;
+  text-decoration: none;
+  display: contents;
+  font-size: bold;
 }
 
 b strong {
   font-weight: bold;
-}
-
-dd,
-dt {
-  display: inline;
 }
 
 .section-area {
@@ -127,6 +143,10 @@ dt {
     border: 16px solid #f6f9fd;
     object-fit: cover;
   }
+
+  &--title {
+    margin-bottom: 16px;
+  }
 }
 
 .skill-part {
@@ -140,9 +160,10 @@ dt {
     line-height: 72px;
   }
 
-  &--column {
+  &--list {
     text-align: left;
     list-style-image: url("../assets/img/small-tick.svg");
+    font-weight: 600;
   }
 }
 
@@ -150,8 +171,12 @@ dt {
   margin-bottom: 64px;
 }
 
-.section-area-repos--title {
-  margin-bottom: 46px;
+.section-area-repos--about {
+  margin-bottom: 22px;
+  &-text {
+    margin-top:32px;
+    margin-block-end: 0;
+  }
 }
 
 .github-repo-console {
@@ -159,7 +184,7 @@ dt {
   border-radius: 16px;
   height: 320px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-top: 24px;
   overflow: hidden;
   position: relative;
 
@@ -225,14 +250,19 @@ dt {
       height: inherit;
 
       &__name {
-        color:$white;
+        color: $white;
       }
 
       &__link {
-        & a:link, a:visited, a:focus, a:hover, a:active {
+        & a:link,
+        a:visited,
+        a:focus,
+        a:hover,
+        a:active {
           color: $consoleLink;
+          text-decoration: underline;
         }
-      
+
         &::after {
           content: ">";
         }
