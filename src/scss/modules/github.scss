@@ -1,0 +1,122 @@
+.github-repo {
+  &-list {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+      justify-items: stretch;
+    }
+  }
+
+  &-console {
+    background-color: $consoleGray2;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+
+    &-header {
+      height: 40px;
+      background-color: $consoleGray1;
+      display: flex;
+      padding: 16px 0 0 16px;
+
+      &-dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: $consoleGray3;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+
+    &-content {
+      font-family: "Roboto Mono", monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 24px;
+      color: $consoleGray5;
+
+      @media (min-width: $desktop) {
+        font-size: 16px;
+      }
+
+      &--icon {
+        position: absolute;
+        top: 74px;
+        left: 16px;
+        @media (min-width: $tablet) {
+          left: 50px;
+          top: 58px;
+        }
+      }
+
+      &--list {
+        margin: 72px 16px 48px 16px;
+        @media (min-width: $tablet) {
+          margin: 66px 48px 58px 48px;
+        }
+
+        &-line {
+          display: flex;
+          flex-flow: row wrap;
+          margin-bottom: 8px;
+          height: 24px;
+
+          &__description {
+            margin-bottom: 24px;
+            height: 48px;
+          }
+        }
+      }
+
+      &--line-left {
+        flex-basis: 40%;
+        text-align: right;
+        @media (min-width: $desktop) {
+          flex-basis: 27%;
+        }
+      }
+
+      &--line-right {
+        flex-basis: 58%;
+        margin-left: 4px;
+        text-align: left;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: inherit;
+
+        @media (min-width: $desktop) {
+          flex-basis: 64%;
+        }
+
+        &__name {
+          color: $white;
+        }
+
+        &__link {
+          & a:link,
+          a:visited,
+          a:focus,
+          a:hover,
+          a:active {
+            color: $consoleLink;
+            text-decoration: underline;
+          }
+
+          &::after {
+            content: ">";
+          }
+          &::before {
+            content: "<";
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.section-area-contact {
+  background: $blueLight;
+
+  &--icon-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 192px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  &--external-page-icon {
+    border: 10px solid $white;
+    border-radius: 50px;
+    background: $white;
+    display: flex;
+  }
+
+  &--links {
+    align-self: center;
+    justify-content: space-evenly;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      max-height: 48px;
+      width: 580px;
+    }
+  }
+
+  &--contact-me-button {
+    margin-top: 48px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
+}

@@ -30,6 +30,11 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 h1 {
@@ -42,6 +47,11 @@ h1 {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 h2 {
@@ -49,6 +59,25 @@ h2 {
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  @media (min-width: $tablet) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+  }
 
   margin-block-start: 0;
   margin-block-end: 0;
@@ -65,6 +94,7 @@ a:active {
   text-decoration: none;
   display: contents;
   font-size: bold;
+  white-space: nowrap;
 }
 
 b strong {
@@ -83,20 +113,25 @@ b strong {
     margin: 0 16px auto;
     margin-top: 64px;
     margin-bottom: 88px;
+
+    @media (min-width: $desktop) {
+      max-width: 1184px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 176px;
+    }
   }
 
   &--contact-me-button:link,
   &--contact-me-button:visited,
   &--contact-me-button:focus,
   &--contact-me-button:hover,
-  &--contact-me-button:active,
-  {
+  &--contact-me-button:active {
     display: flex;
     flex: none;
     background: $textLink;
     border-radius: 64px;
     color: $white;
-    margin-top: 48px;
     max-width: 278px;
 
     font-family: "Nunito", sans-serif;
@@ -110,189 +145,23 @@ b strong {
     padding: 4px 24px;
   }
 
-  &__skills {
-    background: $blue;
-    color: $white;
-  }
+  &--about {
+    margin-bottom: 22px;
 
-  &__contact {
-    background: $blueLight;
-  }
-}
-
-.hallo-area {
-  justify-content: center;
-  align-content: center;
-  background-color: $white;
-  width: 100vw;
-  min-height: 722px;
-
-  &--content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 16px auto;
-    margin-top: 64px;
-    margin-bottom: 88px;
-  }
-
-  &--photo {
-    display: block;
-    box-sizing: content-box;
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 34px;
-    border: 16px solid #f6f9fd;
-    object-fit: cover;
-  }
-
-  &--title {
-    margin-bottom: 16px;
-  }
-}
-
-.skill-part {
-  background: $blue;
-  width: 100%;
-  text-align: center;
-  color: $white;
-
-  &--header-emoji {
-    font-size: 64px;
-    line-height: 72px;
-  }
-
-  &--column {
-    margin-bottom: 64px;
-  }
-
-  &--list {
-    text-align: left;
-    list-style-image: url("../assets/img/small-tick.svg");
-    font-weight: 600;
-  }
-}
-
-.section-area-skills--header-title {
-  margin-bottom: 64px;
-}
-
-.section-area-repos--about {
-  margin-bottom: 22px;
-  &-text {
-    margin-top: 32px;
-    margin-block-end: 0;
-  }
-}
-
-.github-repo-console {
-  background-color: $consoleGray2;
-  border-radius: 16px;
-  height: 320px;
-  margin: 0 auto;
-  margin-top: 24px;
-  overflow: hidden;
-  position: relative;
-
-  &-header {
-    height: 40px;
-    background-color: $consoleGray1;
-    display: flex;
-    padding: 16px 0 0 16px;
-
-    &-dot {
-      display: block;
-      width: 8px;
-      height: 8px;
-      background: $consoleGray3;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-  }
-
-  &-content {
-    font-family: "Roboto Mono", monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    height: 256px;
-    color: $consoleGray5;
-
-    &--icon {
-      position: absolute;
-      top: 74px;
-      left: 16px;
+    @media (min-width: $tablet) {
+      max-width: 782px;
+      margin: 0 auto;
+      margin-bottom: 128px;
     }
 
-    &--list {
-      margin: 72px 16px 24px 16px;
-
-      &-line {
-        display: flex;
-        flex-flow: row wrap;
-        margin-bottom: 8px;
-        height: 24px;
-
-        &__description {
-          margin-bottom: 24px;
-          height: 48px;
-        }
-      }
-    }
-
-    &--line-left {
-      flex-basis: 40%;
-      text-align: right;
-    }
-
-    &--line-right {
-      flex-basis: 58%;
-      margin-left: 4px;
-      text-align: left;
-      white-space: normal;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: inherit;
-
-      &__name {
-        color: $white;
-      }
-
-      &__link {
-        & a:link,
-        a:visited,
-        a:focus,
-        a:hover,
-        a:active {
-          color: $consoleLink;
-          text-decoration: underline;
-        }
-
-        &::after {
-          content: ">";
-        }
-        &::before {
-          content: "<";
-        }
-      }
+    &-text {
+      margin-top: 40px;
+      margin-block-end: 0;
     }
   }
 }
 
-.contact-area--external-page-icon {
-  border: 10px solid $white;
-  border-radius: 50px;
-  background: $white;
-  display: flex;
-}
-
-.contact-area--icon-row {
-  display: flex;
-  justify-content: space-evenly;
-  width: 192px;
-  margin: 0 auto;
-}
+@import "modules/hello.scss";
+@import "modules/skills.scss";
+@import "modules/github.scss";
+@import "modules/contact.scss";

@@ -1,0 +1,66 @@
+.skill-part {
+  background: $blue;
+  width: 100%;
+  text-align: center;
+  color: $white;
+
+  &--header-emoji {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 16px;
+  }
+
+  &--column {
+    margin-bottom: 64px;
+  }
+
+  &--list {
+    display: inline-block;
+    width: 226px;
+    padding-inline-start: 24px;
+    text-align: left;
+    list-style-image: url(../assets/img/skills/small-tick-green.svg);
+    font-weight: 600;
+    margin-top: 24px;
+
+    &-item {
+      padding-left: 12px;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      max-width: 235px;
+    }
+
+    &__know-something {
+      list-style-image: url(../assets/img/skills/small-tick-light-blue.svg);
+    }
+
+    &__to-learn {
+      list-style: disc;
+    }
+  }
+}
+
+.section-area-skills {
+  background: $blue;
+  color: $white;
+
+  &--header-title {
+    margin-bottom: 64px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 128px;
+    }
+  }
+
+  &--grid {
+    display: grid;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 24px;
+      max-width: 1184px;
+    }
+  }
+}
