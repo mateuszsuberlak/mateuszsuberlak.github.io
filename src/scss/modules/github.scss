@@ -101,19 +101,35 @@
 
         &__link {
           & a:link,
-          a:visited,
-          a:focus,
-          a:hover,
-          a:active {
+          & a:visited,
+          & a:focus,
+          & a:hover,
+          & a:active {
             color: $consoleLink;
             text-decoration: underline;
           }
 
-          &::after {
+          & a::after {
             content: ">";
+            display: inline-block;
+            text-decoration: none;
+            color: $consoleGray5;
           }
-          &::before {
+          & a::before {
             content: "<";
+            display: inline-block;
+            text-decoration: none;
+            color: $consoleGray5;
+          }
+
+          &--is-Disabled {
+            cursor: not-allowed;
+
+            & a {
+              display: inline-block;
+              pointer-events: none;
+              text-decoration: none;
+            }
           }
         }
       }

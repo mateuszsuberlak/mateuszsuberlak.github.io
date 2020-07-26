@@ -5,7 +5,6 @@
   width: 100vw;
   min-height: 722px;
 
-
   &--content {
     display: flex;
     flex-direction: column;
@@ -88,27 +87,44 @@
       padding: 16px 19px;
       display: block;
 
-      &::after{
+      &::after {
         position: absolute;
-        content: '';
+        content: "";
         display: block;
-        top:100%;
+        top: 99%;
         left: 32px;
         width: 17.42px;
         height: 22.66px;
         background: url(../assets/img/hello/Speech_cloud_tail.svg);
       }
+
+      @keyframes wave {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(60deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      &-hand {
+        display: inline-block;
+        animation: wave 2s ease-in-out infinite;
+        transform-origin: center center;
+      }
     }
-
   }
 
-&--contact-me-button {
-  margin-top: 48px;
+  &--contact-me-button {
+    margin-top: 48px;
 
-  @media (min-width: $desktop) {
-    margin-top: 68px;
+    @media (min-width: $desktop) {
+      margin-top: 68px;
+    }
   }
-}
 
   &--title {
     margin-bottom: 16px;

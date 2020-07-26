@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -30,6 +31,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
+  
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -111,14 +113,14 @@ b strong {
     flex-direction: column;
     text-align: center;
     margin: 0 16px auto;
-    margin-top: 64px;
-    margin-bottom: 88px;
+    padding-top: 64px;
+    padding-bottom: 88px;
 
     @media (min-width: $desktop) {
       max-width: 1184px;
       margin: 0 auto;
-      margin-top: 80px;
-      margin-bottom: 176px;
+      padding-top: 80px;
+      padding-bottom: 176px;
     }
   }
 
