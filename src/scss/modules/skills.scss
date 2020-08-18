@@ -5,8 +5,8 @@
   color: $white;
 
   &--header-emoji {
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 54px;
+    line-height: 62px;
     margin-bottom: 16px;
   }
 
@@ -47,10 +47,26 @@
   color: $white;
 
   &--header-title {
-    margin-bottom: 64px;
+    margin-bottom: 42px;
 
     @media (min-width: $tablet) {
-      margin-bottom: 128px;
+      margin-bottom: 68px;
+    }
+  }
+
+  &--grid-title {
+
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet) {
+    margin-bottom: 42px;
+    font-size: 32px;
+    }
+
+    &-emoji {
+      font-size: 64px;
+      line-height: 72px;
+      margin-bottom: 16px;
     }
   }
 

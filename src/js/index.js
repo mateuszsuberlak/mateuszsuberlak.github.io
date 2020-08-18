@@ -32,7 +32,7 @@ function SetGitHubReposiotryData(repoData) {
   const repoDemoUrlElement = consoleTemplateClone.querySelector(
     ".github-project-demo-url--js"
   );
-  console.log(repoDemoUrlElement);
+  
   if (repoData.homepage) {
     repoDemoUrlElement.href = repoData.homepage;
     repoDemoUrlElement.title = "Demo: " + repoData.name + " see here";
