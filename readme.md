@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://mateuszsuberlak.github.io/img/og-cover.png)
 
 # Mateusz Suberlak - Web Developer Portfolio
 
